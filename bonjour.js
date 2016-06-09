@@ -20,7 +20,7 @@ var os = require('os');
 var app = express();
 
 function say_bonjour(){
-    return "I say: Bonjour de " + os.hostname();
+    return "Hello OpenSourceNorth: Bonjour de " + os.hostname();
 }
 
 app.get('/', function(req, resp) {
