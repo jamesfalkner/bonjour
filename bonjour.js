@@ -23,7 +23,7 @@ function say_bonjour(){
     return "I say: Bonjour de " + os.hostname();
 }
 
-app.get('/api/bonjour', function(req, resp) {
+app.get('/', function(req, resp) {
     resp.set('Access-Control-Allow-Origin', '*');
     resp.send(say_bonjour());
 });
